@@ -1,0 +1,216 @@
+\hypertarget{_u_d_f_8cpp}{}\section{src/\+U\+DF.cpp File Reference}
+\label{_u_d_f_8cpp}\index{src/\+U\+D\+F.\+cpp@{src/\+U\+D\+F.\+cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}mysql.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mysql\+\_\+com.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}/root/mysql-\/8.\+0.\+30/include/mysql/udf\+\_\+registration\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cmake-\/build-\/debug/include/mysql/udf\+\_\+registration\+\_\+types.\+h\char`\"{}}\newline
+Include dependency graph for U\+D\+F.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_u_d_f_8cpp_aa15622aa7d4e890c1c2670de0110d408}{to\+\_\+char} (U\+D\+F\+\_\+\+I\+N\+IT $\ast$initid, U\+D\+F\+\_\+\+A\+R\+GS $\ast$args, char $\ast$result, unsigned long $\ast$length, unsigned char $\ast$is\+\_\+null, unsigned char $\ast$error)
+\item 
+bool \hyperlink{_u_d_f_8cpp_afddac0b3ea492bb31e3d025044c07247}{to\+\_\+char\+\_\+init} (U\+D\+F\+\_\+\+I\+N\+IT $\ast$initid, U\+D\+F\+\_\+\+A\+R\+GS $\ast$args, char $\ast$message, char $\ast$error)
+\item 
+void \hyperlink{_u_d_f_8cpp_aedbd677cd412671533b78c9ad3c5bf39}{to\+\_\+char\+\_\+deinit} (U\+D\+F\+\_\+\+I\+N\+IT $\ast$initid)
+\item 
+const char $\ast$ \hyperlink{_u_d_f_8cpp_a85b8e7fa196588634387839adf715e66}{To\+String} (Item\+\_\+result type)
+\item 
+bool \hyperlink{_u_d_f_8cpp_a70233fb83fc671401f0b6f9c3084b6ec}{check\+\_\+legal} (U\+D\+F\+\_\+\+A\+R\+GS $\ast$args)
+\item 
+void \hyperlink{_u_d_f_8cpp_abf5797ceb0e4f021297e69f394e6cd67}{to\+Double} (U\+D\+F\+\_\+\+A\+R\+GS $\ast$args, double $\ast$d)
+\item 
+void \hyperlink{_u_d_f_8cpp_aa91b03a8679c774a91107b05a2a42d4d}{to\+String} (U\+D\+F\+\_\+\+A\+R\+GS $\ast$args, std\+::string $\ast$s)
+\item 
+bool \hyperlink{_u_d_f_8cpp_ab1a01b35e127dba7836bfff35f6545d9}{split} (std\+::string $\ast$s1, std\+::string $\ast$s11, std\+::string $\ast$s12)
+\item 
+void \hyperlink{_u_d_f_8cpp_a007b7f55c095f743bb47022acc8e10db}{clear\+Strings} (std\+::string $\ast$s1, std\+::string $\ast$s2, bool $\ast$positive\+Number, int $\ast$have\+Symbol, int $\ast$dolor, std\+::vector$<$ std\+::pair$<$ char, int $>$$>$ $\ast$comma, bool $\ast$location\+OfS)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_u_d_f_8cpp_a679c104d0cffb2da1224c0eb27469a50}\label{_u_d_f_8cpp_a679c104d0cffb2da1224c0eb27469a50}} 
+int $\ast$ {\bfseries exist} = new int\mbox{[}12\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_u_d_f_8cpp_a70233fb83fc671401f0b6f9c3084b6ec}\label{_u_d_f_8cpp_a70233fb83fc671401f0b6f9c3084b6ec}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!check\+\_\+legal@{check\+\_\+legal}}
+\index{check\+\_\+legal@{check\+\_\+legal}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{check\+\_\+legal()}{check\_legal()}}
+{\footnotesize\ttfamily bool check\+\_\+legal (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+A\+R\+GS $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \+: U\+DF function arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Whether the string is legal 
+\end{DoxyReturn}
+Check whether args-\/$>$args\mbox{[}1\mbox{]} is legal\mbox{\Hypertarget{_u_d_f_8cpp_a007b7f55c095f743bb47022acc8e10db}\label{_u_d_f_8cpp_a007b7f55c095f743bb47022acc8e10db}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!clear\+Strings@{clear\+Strings}}
+\index{clear\+Strings@{clear\+Strings}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{clear\+Strings()}{clearStrings()}}
+{\footnotesize\ttfamily void clear\+Strings (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{s1,  }\item[{std\+::string $\ast$}]{s2,  }\item[{bool $\ast$}]{positive\+Number,  }\item[{int $\ast$}]{have\+Symbol,  }\item[{int $\ast$}]{dolor,  }\item[{std\+::vector$<$ std\+::pair$<$ char, int $>$$>$ $\ast$}]{comma,  }\item[{bool $\ast$}]{location\+OfS }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & \+: Pointer to decimal part string \\
+\hline
+{\em s2} & \+: Pointer to integer part string \\
+\hline
+{\em positive\+Number} & \+: Pointer to whether is a positive number \\
+\hline
+{\em have\+Symbol} & \+: Pointer to symbol location \\
+\hline
+{\em dolor} & \+: Pointer to whether have \textquotesingle{}\$\textquotesingle{} \\
+\hline
+{\em comma} & \+: Pointer to vector of the location of \textquotesingle{},\textquotesingle{} \\
+\hline
+{\em location\+OfS} & \+: Pointer to location of \textquotesingle{}S\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+clear\+Strings, after clearing, only numbers stay\mbox{\Hypertarget{_u_d_f_8cpp_ab1a01b35e127dba7836bfff35f6545d9}\label{_u_d_f_8cpp_ab1a01b35e127dba7836bfff35f6545d9}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!split@{split}}
+\index{split@{split}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily bool split (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{s1,  }\item[{std\+::string $\ast$}]{s11,  }\item[{std\+::string $\ast$}]{s12 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & \+: Pointer to the string to be decomposed \\
+\hline
+{\em s12} & \+: Pointer to decimal part string \\
+\hline
+{\em s11} & \+: Pointer to integer part string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Whether the string is a decimal 
+\end{DoxyReturn}
+Split args-\/$>$args\mbox{[}0\mbox{]} and args-\/$>$args\mbox{[}1\mbox{]} by \textquotesingle{}.\textquotesingle{}\mbox{\Hypertarget{_u_d_f_8cpp_aa15622aa7d4e890c1c2670de0110d408}\label{_u_d_f_8cpp_aa15622aa7d4e890c1c2670de0110d408}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!to\+\_\+char@{to\+\_\+char}}
+\index{to\+\_\+char@{to\+\_\+char}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{to\+\_\+char()}{to\_char()}}
+{\footnotesize\ttfamily char $\ast$ to\+\_\+char (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+I\+N\+IT $\ast$}]{initid,  }\item[{U\+D\+F\+\_\+\+A\+R\+GS $\ast$}]{args,  }\item[{char $\ast$}]{result,  }\item[{unsigned long $\ast$}]{length,  }\item[{unsigned char $\ast$}]{is\+\_\+null,  }\item[{unsigned char $\ast$}]{error }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+me 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25/10/22.
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em initid} & \+: U\+DF initid arguments \\
+\hline
+{\em args} & \+: U\+DF function arguments \\
+\hline
+{\em result} & \+: U\+DF function result \\
+\hline
+{\em length} & \+: U\+DF function result length \\
+\hline
+{\em is\+\_\+null} & \+: U\+DF function result whether is null \\
+\hline
+{\em error} & \+: U\+DF function whether occur a error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: U\+DF function result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_d_f_8cpp_aedbd677cd412671533b78c9ad3c5bf39}\label{_u_d_f_8cpp_aedbd677cd412671533b78c9ad3c5bf39}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!to\+\_\+char\+\_\+deinit@{to\+\_\+char\+\_\+deinit}}
+\index{to\+\_\+char\+\_\+deinit@{to\+\_\+char\+\_\+deinit}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{to\+\_\+char\+\_\+deinit()}{to\_char\_deinit()}}
+{\footnotesize\ttfamily void to\+\_\+char\+\_\+deinit (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+I\+N\+IT $\ast$}]{initid }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initid} & \+: U\+DF initid arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_d_f_8cpp_afddac0b3ea492bb31e3d025044c07247}\label{_u_d_f_8cpp_afddac0b3ea492bb31e3d025044c07247}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!to\+\_\+char\+\_\+init@{to\+\_\+char\+\_\+init}}
+\index{to\+\_\+char\+\_\+init@{to\+\_\+char\+\_\+init}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{to\+\_\+char\+\_\+init()}{to\_char\_init()}}
+{\footnotesize\ttfamily bool to\+\_\+char\+\_\+init (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+I\+N\+IT $\ast$}]{initid,  }\item[{U\+D\+F\+\_\+\+A\+R\+GS $\ast$}]{args,  }\item[{char $\ast$}]{message,  }\item[{char $\ast$}]{error }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initid} & \+: U\+DF initid arguments \\
+\hline
+{\em args} & \+: U\+DF function arguments \\
+\hline
+{\em message} & \+: U\+DF function error message \\
+\hline
+{\em error} & \+: U\+DF function whether occur a error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: U\+DF function whether occur a error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_d_f_8cpp_abf5797ceb0e4f021297e69f394e6cd67}\label{_u_d_f_8cpp_abf5797ceb0e4f021297e69f394e6cd67}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!to\+Double@{to\+Double}}
+\index{to\+Double@{to\+Double}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{to\+Double()}{toDouble()}}
+{\footnotesize\ttfamily void to\+Double (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+A\+R\+GS $\ast$}]{args,  }\item[{double $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \+: U\+DF function arguments \\
+\hline
+{\em d} & \+: Pointer to the double result \\
+\hline
+\end{DoxyParams}
+Convert anything from args-\/$>$args\mbox{[}i\mbox{]} to double\mbox{\Hypertarget{_u_d_f_8cpp_a85b8e7fa196588634387839adf715e66}\label{_u_d_f_8cpp_a85b8e7fa196588634387839adf715e66}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily const char$\ast$ To\+String (\begin{DoxyParamCaption}\item[{Item\+\_\+result}]{type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \+: Type of args-\/$>$args\mbox{[}i\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: String of type 
+\end{DoxyReturn}
+Convert enum Item\+\_\+result to char $\ast$
+
+not valid for U\+D\+Fs
+
+char $\ast$
+
+double
+
+long long
+
+not valid for U\+D\+Fs \mbox{\Hypertarget{_u_d_f_8cpp_aa91b03a8679c774a91107b05a2a42d4d}\label{_u_d_f_8cpp_aa91b03a8679c774a91107b05a2a42d4d}} 
+\index{U\+D\+F.\+cpp@{U\+D\+F.\+cpp}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!U\+D\+F.\+cpp@{U\+D\+F.\+cpp}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily void to\+String (\begin{DoxyParamCaption}\item[{U\+D\+F\+\_\+\+A\+R\+GS $\ast$}]{args,  }\item[{std\+::string $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \+: U\+DF function arguments \\
+\hline
+{\em s} & \+: Pointer to the string result \\
+\hline
+\end{DoxyParams}
+Convert anything from args-\/$>$args\mbox{[}i\mbox{]} to string
