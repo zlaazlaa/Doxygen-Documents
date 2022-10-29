@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['split',['split',['../_u_d_f_8cpp.html#ab1a01b35e127dba7836bfff35f6545d9',1,'UDF.cpp']]]
+  ['checklegal',['checkLegal',['../_u_d_f_8cpp.html#a55694240754b68b7a624b23e7fdc1418',1,'UDF.cpp']]],
+  ['clearstrings',['clearStrings',['../_u_d_f_8cpp.html#a007b7f55c095f743bb47022acc8e10db',1,'UDF.cpp']]]
 ];

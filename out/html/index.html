@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Main Page</title>
+<title>Function to_char() in MySQL: src/UDF.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Function to_char() in MySQL
    </div>
   </td>
  </tr>
@@ -42,7 +42,6 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -57,11 +56,792 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">My Project Documentation</div>  </div>
+<div class="title">UDF.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Realize function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> in MySQL.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &quot;mysql.h&quot;</code><br />
+<code>#include &quot;mysql_com.h&quot;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;/root/mysql-8.0.30/include/mysql/udf_registration_types.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for UDF.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_u_d_f_8cpp__incl.png" border="0" usemap="#src_2_u_d_f_8cpp" alt=""/></div>
+<map name="src_2_u_d_f_8cpp" id="src_2_u_d_f_8cpp">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structptr_struct.html">ptrStruct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a58b4f26bd12662f3c6ac8f7481fe0eb0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char</a> (UDF_INIT *initid, UDF_ARGS *args, char *result, unsigned long *length, char *is_null, char *error)</td></tr>
+<tr class="separator:a58b4f26bd12662f3c6ac8f7481fe0eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddac0b3ea492bb31e3d025044c07247"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#afddac0b3ea492bb31e3d025044c07247">to_char_init</a> (UDF_INIT *initid, UDF_ARGS *args, char *message, char *error)</td></tr>
+<tr class="separator:afddac0b3ea492bb31e3d025044c07247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbd677cd412671533b78c9ad3c5bf39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#aedbd677cd412671533b78c9ad3c5bf39">to_char_deinit</a> (UDF_INIT *initid)</td></tr>
+<tr class="separator:aedbd677cd412671533b78c9ad3c5bf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fd9a8c6fb4d56094b60cd5bf112154"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a04fd9a8c6fb4d56094b60cd5bf112154">itemResultToString</a> (Item_result type)</td></tr>
+<tr class="separator:a04fd9a8c6fb4d56094b60cd5bf112154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55694240754b68b7a624b23e7fdc1418"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a55694240754b68b7a624b23e7fdc1418">checkLegal</a> (UDF_ARGS *args, UDF_INIT *initid)</td></tr>
+<tr class="separator:a55694240754b68b7a624b23e7fdc1418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad937ce227e4af883720752a370a4460a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#ad937ce227e4af883720752a370a4460a">argsToDouble</a> (UDF_ARGS *args, double *d)</td></tr>
+<tr class="separator:ad937ce227e4af883720752a370a4460a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1de153898dd9279662318f1a1badc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a0c1de153898dd9279662318f1a1badc9">argsToString</a> (UDF_ARGS *args, std::string *s)</td></tr>
+<tr class="separator:a0c1de153898dd9279662318f1a1badc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a01b35e127dba7836bfff35f6545d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#ab1a01b35e127dba7836bfff35f6545d9">split</a> (std::string *s1, std::string *s11, std::string *s12)</td></tr>
+<tr class="separator:ab1a01b35e127dba7836bfff35f6545d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007b7f55c095f743bb47022acc8e10db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a007b7f55c095f743bb47022acc8e10db">clearStrings</a> (std::string *s1, std::string *s2, bool *positiveNumber, int *haveSymbol, int *dolor, std::vector&lt; std::pair&lt; char, int &gt;&gt; *comma, bool *locationOfS)</td></tr>
+<tr class="separator:a007b7f55c095f743bb47022acc8e10db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b737582663a311d7d45edc7890f588f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a3b737582663a311d7d45edc7890f588f">handleEEEE</a> (UDF_ARGS *args, std::string *container, int *sumTemp, const bool *positiveNumber)</td></tr>
+<tr class="separator:a3b737582663a311d7d45edc7890f588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2ff9e99301c010a7a09c633921b8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#aea2ff9e99301c010a7a09c633921b8bc">dealIntegerPart</a> (std::string *s11, std::string *s21, std::string *container, long long *s11tag, unsigned long long *temp)</td></tr>
+<tr class="separator:aea2ff9e99301c010a7a09c633921b8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b38520e727795d39435e5ffe48c00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a92b38520e727795d39435e5ffe48c00a">dealDecimalPart</a> (std::string *s22, std::string *s12, std::string *container, const bool *isDecimal1, const bool *isDecimal2, int *sumTemp)</td></tr>
+<tr class="separator:a92b38520e727795d39435e5ffe48c00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0d99c6462f61a8b5112085ba57da57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#ade0d99c6462f61a8b5112085ba57da57">assembleAns</a> (std::vector&lt; std::pair&lt; char, int &gt;&gt; *comma, std::string *container, const int *dolor, const int *haveSymbol, const bool *positiveNumber, const bool *locationOfS)</td></tr>
+<tr class="separator:ade0d99c6462f61a8b5112085ba57da57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Realize function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> in MySQL. </p>
+<table class="doxtable">
+<tr>
+<th>Project </th><td>Function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> in MySQL </td></tr>
+<tr>
+<th>Author </th><td>Qingyu Ma </td></tr>
+<tr>
+<th>Source </th><td>NULL </td></tr>
+</table>
+<h1><a class="anchor" id="Project"></a>
+Detail</h1>
+<p>Using UDF to implement the Oracle compatible function to_Char() on MySQL. </p>
+<h1><a class="anchor" id="Function"></a>
+Description</h1>
+<p>Change everything to string. Supports separators, special symbols, Scientific notation with user-defined precision, etc. </p>
+<h1><a class="anchor" id="Usage"></a>
+Description</h1>
+<p>Compile the source code into the so library and import it into MySQL. </p>
+<h1><a class="anchor" id="Complete"></a>
+Date</h1>
+<p>29/10/22 </p>
+<h1><a class="anchor" id="Special"></a>
+instructions</h1>
+<p>In 'EEEE' situation, if the third argument is null or is a error type, the default precision is 6, and if the third argument is less than 1, the default precision is 1 </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad937ce227e4af883720752a370a4460a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad937ce227e4af883720752a370a4460a">&#9670;&nbsp;</a></span>argsToDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void argsToDouble </td>
+          <td>(</td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert anything from args-&gt;args[i] to double</p>
+<p>Maybe unuseful, not used now </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+    <tr><td class="paramname">d</td><td>: Pointer to the double result </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; type error </p>
+
+</div>
+</div>
+<a id="a0c1de153898dd9279662318f1a1badc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1de153898dd9279662318f1a1badc9">&#9670;&nbsp;</a></span>argsToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void argsToString </td>
+          <td>(</td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert anything from args-&gt;args[i] to string</p>
+<p>Maybe be only args-&gt;arg_type[0] == STRING_RESULT is useful </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+    <tr><td class="paramname">s</td><td>: Pointer to the string result </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; type error </p>
+
+</div>
+</div>
+<a id="ade0d99c6462f61a8b5112085ba57da57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0d99c6462f61a8b5112085ba57da57">&#9670;&nbsp;</a></span>assembleAns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void assembleAns </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; char, int &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>comma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>dolor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>haveSymbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>positiveNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>locationOfS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assemble ',', '+', '$', etc </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comma</td><td>: Pointer to vector of the location of ',' </td></tr>
+    <tr><td class="paramname">container</td><td>: Pointer to final result string </td></tr>
+    <tr><td class="paramname">dolor</td><td>: Pointer to whether have '$' </td></tr>
+    <tr><td class="paramname">haveSymbol</td><td>: Pointer to the location of symbol </td></tr>
+    <tr><td class="paramname">positiveNumber</td><td>: Pointer to whether is a positive number </td></tr>
+    <tr><td class="paramname">locationOfS</td><td>: Pointer to the location of 'S' </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; assemble ',' and '.'</p>
+<p>&lt; assemble '$'</p>
+<p>&lt; assemble '+', '-', '&lt;&gt;' </p>
+
+</div>
+</div>
+<a id="a55694240754b68b7a624b23e7fdc1418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55694240754b68b7a624b23e7fdc1418">&#9670;&nbsp;</a></span>checkLegal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkLegal </td>
+          <td>(</td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UDF_INIT *&#160;</td>
+          <td class="paramname"><em>initid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether args-&gt;args[1] is legal </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: Whether the string is legal<ul>
+<li>true is legal</li>
+<li>false isn't legal </li>
+</ul>
+</dd></dl>
+<p>&lt; Convert lower case letters to upper case letters</p>
+<p>&lt; Not legal</p>
+<p>&lt; "EEEE"</p>
+<p>&lt; "MI"</p>
+<p>&lt; "PR"</p>
+<p>&lt; "S" </p>
+
+</div>
+</div>
+<a id="a007b7f55c095f743bb47022acc8e10db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007b7f55c095f743bb47022acc8e10db">&#9670;&nbsp;</a></span>clearStrings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clearStrings </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>positiveNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>haveSymbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dolor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; char, int &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>comma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>locationOfS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ClearStrings, after clearing, only numbers stay </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>: Pointer to integer part string </td></tr>
+    <tr><td class="paramname">s2</td><td>: Pointer to decimal part string </td></tr>
+    <tr><td class="paramname">positiveNumber</td><td>: Pointer to whether is a positive number </td></tr>
+    <tr><td class="paramname">haveSymbol</td><td>: Pointer to the location of symbol </td></tr>
+    <tr><td class="paramname">dolor</td><td>: Pointer to whether have '$' </td></tr>
+    <tr><td class="paramname">comma</td><td>: Pointer to vector of the location of ',' </td></tr>
+    <tr><td class="paramname">locationOfS</td><td>: Pointer to location of 'S'</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>In this function, s1 is not the whole first args, just the integer part of a args from UDF. So do s2. </p>
+<p>&lt; delete '-' in s1</p>
+<p>&lt; after is $1,2,3.123PR MI S</p>
+<p>&lt; after is $1,2,3.123</p>
+<p>&lt; after is 1,2,3.123</p>
+<p>&lt; after is 123.123, find position of ',' and '.' </p>
+
+</div>
+</div>
+<a id="a92b38520e727795d39435e5ffe48c00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b38520e727795d39435e5ffe48c00a">&#9670;&nbsp;</a></span>dealDecimalPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dealDecimalPart </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s22</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>isDecimal1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>isDecimal2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sumTemp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Complete the decimal part of ans </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s22</td><td>: Pointer to decimal part string of args[1] </td></tr>
+    <tr><td class="paramname">s12</td><td>: Pointer to decimal part string of args[0] </td></tr>
+    <tr><td class="paramname">container</td><td>: Pointer to final result string </td></tr>
+    <tr><td class="paramname">isDecimal1</td><td>: Pointer to whether args[0] is a decimal </td></tr>
+    <tr><td class="paramname">isDecimal2</td><td>: Pointer to whether args[1] is a decimal </td></tr>
+    <tr><td class="paramname">sumTemp</td><td>: Pointer to carry number</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Before this function, container already have completed the integer part. </p>
+<p>&lt; (-123, '9999.99') -123.00</p>
+<p>&lt; When s12-&gt;length() &lt; s22-&gt;length()</p>
+<p>&lt; Need to carry</p>
+<p>&lt; Excess carry </p>
+
+</div>
+</div>
+<a id="aea2ff9e99301c010a7a09c633921b8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2ff9e99301c010a7a09c633921b8bc">&#9670;&nbsp;</a></span>dealIntegerPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dealIntegerPart </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s21</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long *&#160;</td>
+          <td class="paramname"><em>s11tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long *&#160;</td>
+          <td class="paramname"><em>temp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Complete the integer part of ans </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s11</td><td>: Pointer to integer part string </td></tr>
+    <tr><td class="paramname">s21</td><td>: Pointer to decimal part string </td></tr>
+    <tr><td class="paramname">container</td><td>: Pointer to final result string </td></tr>
+    <tr><td class="paramname">s11tag</td><td>: Pointer to member of s11, used for ergodic </td></tr>
+    <tr><td class="paramname">temp</td><td>: Pointer to a temp variable, used for ergodic </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; complete the integer part </p>
+
+</div>
+</div>
+<a id="a3b737582663a311d7d45edc7890f588f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b737582663a311d7d45edc7890f588f">&#9670;&nbsp;</a></span>handleEEEE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleEEEE </td>
+          <td>(</td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sumTemp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *&#160;</td>
+          <td class="paramname"><em>positiveNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handle EEEE situation, change args to scientific notation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+    <tr><td class="paramname">container</td><td>: Pointer to final result string </td></tr>
+    <tr><td class="paramname">sumTemp</td><td>: Pointer to carry number </td></tr>
+    <tr><td class="paramname">positiveNumber</td><td>: Pointer to whether is a positive number </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; After this, only numbers and '.' stay</p>
+<p>&lt; abs(container) &gt; 1</p>
+<p>&lt; abs(container) &lt; 1</p>
+<p>&lt; Erase useless, before this, number have it's '.' </p>
+
+</div>
+</div>
+<a id="a04fd9a8c6fb4d56094b60cd5bf112154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fd9a8c6fb4d56094b60cd5bf112154">&#9670;&nbsp;</a></span>itemResultToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* itemResultToString </td>
+          <td>(</td>
+          <td class="paramtype">Item_result&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert enum Item_result to char * </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>: Type of args-&gt;args[i] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: String of type </dd></dl>
+<p>not valid for UDFs</p>
+<p>char *</p>
+<p>double</p>
+<p>long long</p>
+<p>not valid for UDFs </p>
+
+</div>
+</div>
+<a id="ab1a01b35e127dba7836bfff35f6545d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a01b35e127dba7836bfff35f6545d9">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool split </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>s12</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Split args-&gt;args[0] and args-&gt;args[1] by '.' </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s1</td><td>: Pointer to the string to be decomposed </td></tr>
+    <tr><td class="paramname">s12</td><td>: Pointer to decimal part string </td></tr>
+    <tr><td class="paramname">s11</td><td>: Pointer to integer part string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: Whether the string is a decimal<ul>
+<li>true is a decimal</li>
+<li>false isn't a decimal </li>
+</ul>
+</dd></dl>
+<p>&lt; is decimal</p>
+<p>&lt; isn't decimal </p>
+
+</div>
+</div>
+<a id="a58b4f26bd12662f3c6ac8f7481fe0eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b4f26bd12662f3c6ac8f7481fe0eb0">&#9670;&nbsp;</a></span>to_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * to_char </td>
+          <td>(</td>
+          <td class="paramtype">UDF_INIT *&#160;</td>
+          <td class="paramname"><em>initid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>is_null</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Oracle function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> implemented on MySQL 8.0.25+ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initid</td><td>: UDF initid arguments </td></tr>
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+    <tr><td class="paramname">result</td><td>: UDF function result </td></tr>
+    <tr><td class="paramname">length</td><td>: UDF function result length </td></tr>
+    <tr><td class="paramname">is_null</td><td>: UDF function result whether is null </td></tr>
+    <tr><td class="paramname">error</td><td>: UDF function whether occur a error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: UDF function result </dd></dl>
+<p>&lt; args-&gt;arg_count == 1, 2</p>
+<p>S2 arguments</p>
+<p>&lt; 0 -&gt; none, 1 -&gt; (S) front and behind, 2-&gt; behind, 3-&gt; both "&lt;&gt;"</p>
+<p>&lt; '$' 0 -&gt; none, 1 -&gt; yes</p>
+<p>&lt; locations of ',' and '.'</p>
+<p>&lt; 0 -&gt; 'S' is in front, 1 -&gt; 'S' is in end</p>
+<p>S1 arguments</p>
+<p>&lt; true -&gt; positive number, false -&gt; negative number</p>
+<p>init s1 and s2</p>
+<p>&lt; s1 is args-&gt;args[0]</p>
+<p>&lt; s2 is args-&gt;args[1], after is $1,2,3.D123PR MI S</p>
+<p>clear s1 and s2</p>
+<p>init container, s11, s12, s21, s22</p>
+<p>&lt; container (ans)</p>
+<p>&lt; can only define here because the existing of 'return_label'</p>
+<p>&lt; can only define here because the existing of 'return_label'</p>
+<p>Exist 'EEEE', return using scientific notation</p>
+<p>&lt; Return container</p>
+<p>Error, print "#####" and return</p>
+<p>&lt; print "#####" and return</p>
+<p>&lt; stop and return the error</p>
+<p>complete the integer part</p>
+<p>complete the decimal part</p>
+<p>start assemble</p>
+<p>concluding work</p>
+<p>&lt; print "#####" and return </p>
+
+</div>
+</div>
+<a id="aedbd677cd412671533b78c9ad3c5bf39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbd677cd412671533b78c9ad3c5bf39">&#9670;&nbsp;</a></span>to_char_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void to_char_deinit </td>
+          <td>(</td>
+          <td class="paramtype">UDF_INIT *&#160;</td>
+          <td class="paramname"><em>initid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Deinit function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initid</td><td>: UDF initid arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afddac0b3ea492bb31e3d025044c07247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddac0b3ea492bb31e3d025044c07247">&#9670;&nbsp;</a></span>to_char_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool to_char_init </td>
+          <td>(</td>
+          <td class="paramtype">UDF_INIT *&#160;</td>
+          <td class="paramname"><em>initid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UDF_ARGS *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Init function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initid</td><td>: UDF initid arguments </td></tr>
+    <tr><td class="paramname">args</td><td>: UDF function arguments </td></tr>
+    <tr><td class="paramname">message</td><td>: UDF function error message </td></tr>
+    <tr><td class="paramname">error</td><td>: UDF function whether occur a error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: UDF function whether occur a error<ul>
+<li>true init fail</li>
+<li>false init success </li>
+</ul>
+</dd></dl>
+<p>&lt; 'EEEE' for the third of args </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['check_5flegal',['check_legal',['../_u_d_f_8cpp.html#a70233fb83fc671401f0b6f9c3084b6ec',1,'UDF.cpp']]],
-  ['clearstrings',['clearStrings',['../_u_d_f_8cpp.html#a007b7f55c095f743bb47022acc8e10db',1,'UDF.cpp']]]
+  ['argstodouble',['argsToDouble',['../_u_d_f_8cpp.html#ad937ce227e4af883720752a370a4460a',1,'UDF.cpp']]],
+  ['argstostring',['argsToString',['../_u_d_f_8cpp.html#a0c1de153898dd9279662318f1a1badc9',1,'UDF.cpp']]],
+  ['assembleans',['assembleAns',['../_u_d_f_8cpp.html#ade0d99c6462f61a8b5112085ba57da57',1,'UDF.cpp']]]
 ];
