@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ptr',['ptr',['../structptr_struct.html#a432776f8dfb06fa2a822fa3e28b27783',1,'ptrStruct']]],
-  ['ptrstruct',['ptrStruct',['../structptr_struct.html',1,'']]]
+  ['split',['split',['../_u_d_f_8cpp.html#ab1a01b35e127dba7836bfff35f6545d9',1,'UDF.cpp']]]
 ];

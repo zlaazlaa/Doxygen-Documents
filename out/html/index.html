@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Function to_char() in MySQL: src/UDF.cpp File Reference</title>
+<title>My Project: src/UDF.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Function to_char() in MySQL
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -137,20 +137,20 @@ Functions</h2></td></tr>
 <tr>
 <th>Source </th><td>NULL </td></tr>
 </table>
-<h1><a class="anchor" id="Project"></a>
-Detail</h1>
+<h1><a class="anchor" id="Project_Detail"></a>
+Project_Detail</h1>
 <p>Using UDF to implement the Oracle compatible function to_Char() on MySQL. </p>
-<h1><a class="anchor" id="Function"></a>
-Description</h1>
+<h1><a class="anchor" id="Function_Description"></a>
+Function_Description</h1>
 <p>Change everything to string. Supports separators, special symbols, Scientific notation with user-defined precision, etc. </p>
-<h1><a class="anchor" id="Usage"></a>
-Description</h1>
+<h1><a class="anchor" id="Usage_Description"></a>
+Usage_Description</h1>
 <p>Compile the source code into the so library and import it into MySQL. </p>
-<h1><a class="anchor" id="Complete"></a>
-Date</h1>
+<h1><a class="anchor" id="Complete_Date"></a>
+Complete_Date</h1>
 <p>29/10/22 </p>
-<h1><a class="anchor" id="Special"></a>
-instructions</h1>
+<h1><a class="anchor" id="Special_Instructions"></a>
+Special_Instructions</h1>
 <p>In 'EEEE' situation, if the third argument is null or is a error type, the default precision is 6, and if the third argument is less than 1, the default precision is 1 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="ad937ce227e4af883720752a370a4460a"></a>
@@ -186,7 +186,6 @@ instructions</h1>
   </table>
   </dd>
 </dl>
-<p>&lt; type error </p>
 
 </div>
 </div>
@@ -223,7 +222,6 @@ instructions</h1>
   </table>
   </dd>
 </dl>
-<p>&lt; type error </p>
 
 </div>
 </div>
@@ -287,9 +285,8 @@ instructions</h1>
   </table>
   </dd>
 </dl>
-<p>&lt; assemble ',' and '.'</p>
-<p>&lt; assemble '$'</p>
-<p>&lt; assemble '+', '-', '&lt;&gt;' </p>
+<p>Assemble ',' and '.'</p>
+<p>Assemble '+', '-', '&lt;&gt;' </p>
 
 </div>
 </div>
@@ -329,12 +326,6 @@ instructions</h1>
 <li>false isn't legal </li>
 </ul>
 </dd></dl>
-<p>&lt; Convert lower case letters to upper case letters</p>
-<p>&lt; Not legal</p>
-<p>&lt; "EEEE"</p>
-<p>&lt; "MI"</p>
-<p>&lt; "PR"</p>
-<p>&lt; "S" </p>
 
 </div>
 </div>
@@ -406,11 +397,6 @@ instructions</h1>
   </dd>
 </dl>
 <p>In this function, s1 is not the whole first args, just the integer part of a args from UDF. So do s2. </p>
-<p>&lt; delete '-' in s1</p>
-<p>&lt; after is $1,2,3.123PR MI S</p>
-<p>&lt; after is $1,2,3.123</p>
-<p>&lt; after is 1,2,3.123</p>
-<p>&lt; after is 123.123, find position of ',' and '.' </p>
 
 </div>
 </div>
@@ -475,10 +461,6 @@ instructions</h1>
   </dd>
 </dl>
 <p>Before this function, container already have completed the integer part. </p>
-<p>&lt; (-123, '9999.99') -123.00</p>
-<p>&lt; When s12-&gt;length() &lt; s22-&gt;length()</p>
-<p>&lt; Need to carry</p>
-<p>&lt; Excess carry </p>
 
 </div>
 </div>
@@ -535,7 +517,7 @@ instructions</h1>
   </table>
   </dd>
 </dl>
-<p>&lt; complete the integer part </p>
+<p>Complete the integer part </p>
 
 </div>
 </div>
@@ -585,10 +567,10 @@ instructions</h1>
   </table>
   </dd>
 </dl>
-<p>&lt; After this, only numbers and '.' stay</p>
-<p>&lt; abs(container) &gt; 1</p>
-<p>&lt; abs(container) &lt; 1</p>
-<p>&lt; Erase useless, before this, number have it's '.' </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a0c1de153898dd9279662318f1a1badc9">argsToString()</a></dd></dl>
+<p>After this, only numbers and '.' stay</p>
+<p>Erase useless, before this, number have it's '.'</p>
+<p>Processing carry </p>
 
 </div>
 </div>
@@ -614,11 +596,6 @@ instructions</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: String of type </dd></dl>
-<p>not valid for UDFs</p>
-<p>char *</p>
-<p>double</p>
-<p>long long</p>
-<p>not valid for UDFs </p>
 
 </div>
 </div>
@@ -666,8 +643,6 @@ instructions</h1>
 <li>false isn't a decimal </li>
 </ul>
 </dd></dl>
-<p>&lt; is decimal</p>
-<p>&lt; isn't decimal </p>
 
 </div>
 </div>
@@ -732,32 +707,24 @@ instructions</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: UDF function result </dd></dl>
-<p>&lt; args-&gt;arg_count == 1, 2</p>
 <p>S2 arguments</p>
-<p>&lt; 0 -&gt; none, 1 -&gt; (S) front and behind, 2-&gt; behind, 3-&gt; both "&lt;&gt;"</p>
-<p>&lt; '$' 0 -&gt; none, 1 -&gt; yes</p>
-<p>&lt; locations of ',' and '.'</p>
-<p>&lt; 0 -&gt; 'S' is in front, 1 -&gt; 'S' is in end</p>
 <p>S1 arguments</p>
-<p>&lt; true -&gt; positive number, false -&gt; negative number</p>
 <p>init s1 and s2</p>
-<p>&lt; s1 is args-&gt;args[0]</p>
-<p>&lt; s2 is args-&gt;args[1], after is $1,2,3.D123PR MI S</p>
-<p>clear s1 and s2</p>
-<p>init container, s11, s12, s21, s22</p>
-<p>&lt; container (ans)</p>
-<p>&lt; can only define here because the existing of 'return_label'</p>
-<p>&lt; can only define here because the existing of 'return_label'</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a0c1de153898dd9279662318f1a1badc9">argsToString()</a></dd>
+<dd>
+<a class="el" href="_u_d_f_8cpp.html#a007b7f55c095f743bb47022acc8e10db">clearStrings()</a></dd></dl>
+<p>Init container, s11, s12, s21, s22</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#ab1a01b35e127dba7836bfff35f6545d9">split()</a></dd></dl>
 <p>Exist 'EEEE', return using scientific notation</p>
-<p>&lt; Return container</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a3b737582663a311d7d45edc7890f588f">handleEEEE()</a></dd></dl>
 <p>Error, print "#####" and return</p>
-<p>&lt; print "#####" and return</p>
-<p>&lt; stop and return the error</p>
-<p>complete the integer part</p>
-<p>complete the decimal part</p>
-<p>start assemble</p>
-<p>concluding work</p>
-<p>&lt; print "#####" and return </p>
+<p>Complete the integer part</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#aea2ff9e99301c010a7a09c633921b8bc">dealIntegerPart()</a></dd></dl>
+<p>Complete the decimal part</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a92b38520e727795d39435e5ffe48c00a">dealDecimalPart()</a></dd></dl>
+<p>Start assemble</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#ade0d99c6462f61a8b5112085ba57da57">assembleAns()</a></dd></dl>
+<p>Concluding work </p>
 
 </div>
 </div>
@@ -838,7 +805,6 @@ instructions</h1>
 <li>false init success </li>
 </ul>
 </dd></dl>
-<p>&lt; 'EEEE' for the third of args </p>
 
 </div>
 </div>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['info',['info',['../structinfo.html',1,'']]],
-  ['itemresulttostring',['itemResultToString',['../_u_d_f_8cpp.html#a04fd9a8c6fb4d56094b60cd5bf112154',1,'UDF.cpp']]]
+  ['ptrstruct',['ptrStruct',['../structptr_struct.html',1,'']]]
 ];

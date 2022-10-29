@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['handleeeee',['handleEEEE',['../_u_d_f_8cpp.html#a3b737582663a311d7d45edc7890f588f',1,'UDF.cpp']]]
+  ['info',['info',['../structinfo.html',1,'']]],
+  ['itemresulttostring',['itemResultToString',['../_u_d_f_8cpp.html#a04fd9a8c6fb4d56094b60cd5bf112154',1,'UDF.cpp']]]
 ];
