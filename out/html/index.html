@@ -85,6 +85,7 @@ $(function() {
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;/root/mysql-8.0.30/include/mysql/udf_registration_types.h&quot;</code><br />
+<code>#include &quot;cmake-build-debug/include/mysql/udf_registration_types.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for UDF.cpp:</div>
 <div class="dyncontent">
@@ -120,12 +121,12 @@ Functions</h2></td></tr>
 <tr class="separator:a007b7f55c095f743bb47022acc8e10db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b737582663a311d7d45edc7890f588f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a3b737582663a311d7d45edc7890f588f">handleEEEE</a> (UDF_ARGS *args, std::string *container, int *sumTemp, const bool *positiveNumber)</td></tr>
 <tr class="separator:a3b737582663a311d7d45edc7890f588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea2ff9e99301c010a7a09c633921b8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#aea2ff9e99301c010a7a09c633921b8bc">dealIntegerPart</a> (std::string *s11, std::string *s21, std::string *container, long long *s11tag, unsigned long long *temp)</td></tr>
-<tr class="separator:aea2ff9e99301c010a7a09c633921b8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa6495789e54fee3c2059ccf3ae7456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a4fa6495789e54fee3c2059ccf3ae7456">dealIntegerPart</a> (std::string *s11, std::string *s21, std::string *container, long long *s11tag, unsigned long long *temp, long long *sumOfSpace)</td></tr>
+<tr class="separator:a4fa6495789e54fee3c2059ccf3ae7456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b38520e727795d39435e5ffe48c00a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a92b38520e727795d39435e5ffe48c00a">dealDecimalPart</a> (std::string *s22, std::string *s12, std::string *container, const bool *isDecimal1, const bool *isDecimal2, int *sumTemp)</td></tr>
 <tr class="separator:a92b38520e727795d39435e5ffe48c00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0d99c6462f61a8b5112085ba57da57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#ade0d99c6462f61a8b5112085ba57da57">assembleAns</a> (std::vector&lt; std::pair&lt; char, int &gt;&gt; *comma, std::string *container, const int *dolor, const int *haveSymbol, const bool *positiveNumber, const bool *locationOfS)</td></tr>
-<tr class="separator:ade0d99c6462f61a8b5112085ba57da57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c4008ddaf00ffadff0f4ac17259361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_d_f_8cpp.html#a26c4008ddaf00ffadff0f4ac17259361">assembleAns</a> (std::vector&lt; std::pair&lt; char, int &gt;&gt; *comma, std::string *container, const int *dolor, const int *haveSymbol, const bool *positiveNumber, const bool *locationOfS, const long long *sumOfSpace)</td></tr>
+<tr class="separator:a26c4008ddaf00ffadff0f4ac17259361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Realize function <a class="el" href="_u_d_f_8cpp.html#a58b4f26bd12662f3c6ac8f7481fe0eb0">to_char()</a> in MySQL. </p>
@@ -225,8 +226,8 @@ Special_Instructions</h1>
 
 </div>
 </div>
-<a id="ade0d99c6462f61a8b5112085ba57da57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0d99c6462f61a8b5112085ba57da57">&#9670;&nbsp;</a></span>assembleAns()</h2>
+<a id="a26c4008ddaf00ffadff0f4ac17259361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c4008ddaf00ffadff0f4ac17259361">&#9670;&nbsp;</a></span>assembleAns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +266,13 @@ Special_Instructions</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const bool *&#160;</td>
-          <td class="paramname"><em>locationOfS</em>&#160;</td>
+          <td class="paramname"><em>locationOfS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const long long *&#160;</td>
+          <td class="paramname"><em>sumOfSpace</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -282,6 +289,7 @@ Special_Instructions</h1>
     <tr><td class="paramname">haveSymbol</td><td>: Pointer to the location of symbol </td></tr>
     <tr><td class="paramname">positiveNumber</td><td>: Pointer to whether is a positive number </td></tr>
     <tr><td class="paramname">locationOfS</td><td>: Pointer to the location of 'S' </td></tr>
+    <tr><td class="paramname">sumOfSpace</td><td>: Pointer to the quantity of ' ' </td></tr>
   </table>
   </dd>
 </dl>
@@ -464,8 +472,8 @@ Special_Instructions</h1>
 
 </div>
 </div>
-<a id="aea2ff9e99301c010a7a09c633921b8bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea2ff9e99301c010a7a09c633921b8bc">&#9670;&nbsp;</a></span>dealIntegerPart()</h2>
+<a id="a4fa6495789e54fee3c2059ccf3ae7456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa6495789e54fee3c2059ccf3ae7456">&#9670;&nbsp;</a></span>dealIntegerPart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +506,13 @@ Special_Instructions</h1>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long long *&#160;</td>
-          <td class="paramname"><em>temp</em>&#160;</td>
+          <td class="paramname"><em>temp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long *&#160;</td>
+          <td class="paramname"><em>sumOfSpace</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -514,6 +528,7 @@ Special_Instructions</h1>
     <tr><td class="paramname">container</td><td>: Pointer to final result string </td></tr>
     <tr><td class="paramname">s11tag</td><td>: Pointer to member of s11, used for ergodic </td></tr>
     <tr><td class="paramname">temp</td><td>: Pointer to a temp variable, used for ergodic </td></tr>
+    <tr><td class="paramname">sumOfSpace</td><td>: Pointer to the quantity of ' ' </td></tr>
   </table>
   </dd>
 </dl>
@@ -719,11 +734,11 @@ Special_Instructions</h1>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a3b737582663a311d7d45edc7890f588f">handleEEEE()</a></dd></dl>
 <p>Error, print "#####" and return</p>
 <p>Complete the integer part</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#aea2ff9e99301c010a7a09c633921b8bc">dealIntegerPart()</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a4fa6495789e54fee3c2059ccf3ae7456">dealIntegerPart()</a></dd></dl>
 <p>Complete the decimal part</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a92b38520e727795d39435e5ffe48c00a">dealDecimalPart()</a></dd></dl>
 <p>Start assemble</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#ade0d99c6462f61a8b5112085ba57da57">assembleAns()</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_u_d_f_8cpp.html#a26c4008ddaf00ffadff0f4ac17259361">assembleAns()</a></dd></dl>
 <p>Concluding work </p>
 
 </div>
